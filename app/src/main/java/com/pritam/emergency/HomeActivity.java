@@ -70,7 +70,8 @@ public class HomeActivity extends AppCompatActivity {
                 mBuilder = new NotificationCompat.Builder(context, null);
                 mBuilder.setContentTitle("Downloading - "+"file") // lblTitle.getText()
                         .setContentText("Download in progress")
-                        .setSmallIcon(R.drawable.ic_launcher_foreground)
+                        // .setSmallIcon(R.drawable.ic_launcher_foreground)
+                        .setSmallIcon(R.mipmap.ic_launcher) // use png https://stackoverflow.com/questions/25317659/how-to-fix-android-app-remoteserviceexception-bad-notification-posted-from-pac
                         .setOnlyAlertOnce(true)
                         .setContentIntent(pendingIntent);
 
